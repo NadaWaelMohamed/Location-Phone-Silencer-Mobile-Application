@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your location"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+       />
+
+    <EditText
+        android:id="@+id/User_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your ID"
+        android:textSize="24dp"
+        android:layout_below="@+id/Details"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/Latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Latitude"
+        android:textSize="24dp"
+        android:layout_below="@+id/User_ID"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/Longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Longitude"
+        android:textSize="24dp"
+        android:layout_below="@+id/Latitude"
+        android:inputType="number"/>
+
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Insert"
+        android:layout_below="@+id/Longitude" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Update"
+            android:layout_below="@+id/btnInsert" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="Delete"
+            android:layout_below="@+id/btnUpdate" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:text="View"
+            android:layout_below="@+id/btnDelete" />
+
+
+
+
+
+
+
+
+</RelativeLayout>
